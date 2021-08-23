@@ -1,29 +1,30 @@
-import "styled-components";
+import 'styled-components'
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
-    title: string;
+    title: string
     colors: {
-      input: string;
-      elements: string;
+      input: string
+      elements: string
 
-      background: string;
-      text: string;
-    };
+      background: string
+      text: string
+    }
     fontSizes: {
-      small: string;
-      medium: string;
-      large: string;
-    };
+      small: string
+      medium: string
+      large: string
+    }
   }
 
   export interface CustomTheme {
-    title: string;
+    title: string
     colors: {
-      elements: string;
+      input: string
+      elements: string
 
-      background: string;
-      text: string;
+      background: string
+      text: string
     }
   }
 }
