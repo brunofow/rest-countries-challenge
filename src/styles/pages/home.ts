@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const SearchContainer = styled.div`
   width: 90%;
@@ -13,7 +13,7 @@ export const SearchContainer = styled.div`
     flex-direction: column;
     width: 100%;
   }
-`
+`;
 
 export const InputBox = styled.div`
   position: relative;
@@ -34,7 +34,7 @@ export const InputBox = styled.div`
       left: 9%;
     }
   }
-`
+`;
 
 export const Input = styled.input`
   width: 22rem;
@@ -53,7 +53,7 @@ export const Input = styled.input`
   @media (max-width: 768px) {
     width: 85%;
   }
-`
+`;
 
 export const DropdownContainer = styled.div`
   position: relative;
@@ -100,7 +100,7 @@ export const DropdownContainer = styled.div`
     position: absolute;
     right: 20px;
   }
-`
+`;
 
 export const Countries = styled.div`
   display: grid;
@@ -120,14 +120,14 @@ export const Countries = styled.div`
     flex-direction: column;
     top: 14rem;
   }
-`
+`;
 
 export const Country = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const Flag = styled.div`
   width: 15rem;
@@ -137,7 +137,7 @@ export const Flag = styled.div`
   img {
     border-radius: 6px 6px 0 0;
   }
-`
+`;
 
 export const Details = styled.div`
   min-width: 15rem;
@@ -159,4 +159,4 @@ export const Details = styled.div`
   span {
     font-weight: normal;
   }
-`
+`;

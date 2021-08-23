@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const BackContainer = styled.div`
   position: absolute;
@@ -9,7 +9,7 @@ export const BackContainer = styled.div`
   @media (max-width: 768px) {
     top: 2rem;
   }
-`
+`;
 
 export const BackButton = styled.div`
   width: 6rem;
@@ -21,7 +21,7 @@ export const BackButton = styled.div`
   border-radius: 4px;
   box-shadow: 0 0 8px #00000060;
   cursor: pointer;
-`
+`;
 
 export const CountryContainer = styled.article`
   width: 90%;
@@ -35,7 +35,7 @@ export const CountryContainer = styled.article`
     height: 120vh;
     margin-top: 16rem;
   }
-`
+`;
 
 export const Flag = styled.section`
   width: 45%;
@@ -47,7 +47,7 @@ export const Flag = styled.section`
     height: 22rem;
     top: 8rem;
   }
-`
+`;
 
 export const CountryDetails = styled.section`
   width: 45%;
@@ -83,7 +83,7 @@ export const CountryDetails = styled.section`
       margin-bottom: 2rem;
     }
   }
-`
+`;
 
 export const Footer = styled.div`
   align-items: center;
@@ -118,4 +118,4 @@ export const Footer = styled.div`
       margin-bottom: 1rem;
     }
   }
-`
+`;

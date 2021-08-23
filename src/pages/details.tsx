@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 import { useState, useEffect, useContext } from 'react';
 import { BsArrowLeft } from 'react-icons/bs'
-import GlobalStyles from '../../styles/global'
+import GlobalStyles from '../styles/global'
 import { ThemeProvider } from 'styled-components';
-import Header from '../../components/Header';
-import Spinner from '../../components/Spinner';
-import { ThemeContext } from '../../contexts/ThemeContext';
-import { api } from '../../services/api';
-import { Container } from '../../styles/global';
-import { CountryProps } from '../countries';
+import Header from '../components/Header';
+import Spinner from '../components/Spinner';
+import { ThemeContext } from '../contexts/ThemeContext';
+import { api } from '../services/api';
+import { Container } from '../styles/global';
+import { CountryProps } from '../typings/countries';
 
 import {
   BackContainer,
@@ -19,7 +19,7 @@ import {
   Flag,
   CountryDetails,
   Footer
-} from './styles'
+} from '../styles/pages/details'
 import { GetServerSideProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 

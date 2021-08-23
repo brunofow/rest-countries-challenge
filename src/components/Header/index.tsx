@@ -3,7 +3,7 @@ import { HiMoon, HiSun } from 'react-icons/hi'
 import { ThemeContext } from '../../contexts/ThemeContext'
 import {
   HeaderStyles
-} from './styles'
+} from '../../styles/components/header'
 
 
 export default function Header() {

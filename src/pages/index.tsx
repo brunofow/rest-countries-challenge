@@ -20,12 +20,12 @@ import {
   Country,
   Flag,
   Details
-} from './styles'
+} from '../styles/pages/home'
 import { useRef } from 'react'
 import ReactDropdown from 'react-dropdown'
 import { useState } from 'react'
 import { api } from '../services/api'
-import { CountryProps } from './countries'
+import { CountryProps } from '../typings/countries'
 import Spinner from '../components/Spinner'
 
 export default function Home() {

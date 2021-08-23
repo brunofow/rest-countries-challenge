@@ -1,4 +1,4 @@
-import { Spinner as SpinnerElement } from './styles'
+import { Spinner as SpinnerElement } from '../../styles/components/spinner'
 
 export default function Spinner() {
   return (
