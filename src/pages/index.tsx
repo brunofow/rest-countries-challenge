@@ -31,7 +31,7 @@ import Spinner from '../components/Spinner'
 export default function Home() {
   const [allCountries, setAllCountries] = useState<CountryProps[]>([])
   const [countries, setCountries] = useState<CountryProps[]>([])
-  const [isLoading, setIsLoading] = useState<Boolean>(true)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
   const [search, setSearch] = useState<string>('')
   const { theme } = useContext(ThemeContext)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -95,21 +95,21 @@ export default function Home() {
       <Container>
         <SearchContainer>
           <InputBox>
-            <Input value={search} onChange={event => setSearch(event.target.value)} ref={inputRef} placeholder="Search for a country" autoComplete="new-password" />
+            <Input value={search} onChange={event => setSearch(event.target.value)} ref={inputRef} placeholder='Search for a country' autoComplete='new-password' />
             <FiSearch onClick={focusInput} size={18} color={theme.title === 'light' ? "#858585" : "#b9c7d5"} />
           </InputBox>
           <DropdownContainer>
-            <Dropdown onChange={event => loadByRegion(event.value)} className="dropdown" options={options} placeholder="Filter by Region" />
+            <Dropdown onChange={event => loadByRegion(event.value)} className='dropdown' options={options} placeholder='Filter by Region' />
             <RiArrowDropDownLine size={20} />
           </DropdownContainer>
         </SearchContainer>
         {isLoading && <Spinner />}
         <Countries>
           {countries.map((country, index) => (
-            <Link href={`/details?countryName=${country.name}`}>
-              <Country key={index}>
+            <Link key={index} href={`/details?countryName=${country.name}`}>
+              <Country>
                 <Flag>
-                  <Image src={country.flag} alt={country.name} layout="fill" />
+                  <Image src={country.flag} alt={country.name} layout='fill' />
                 </Flag>
                 <Details>
                   <strong>{country.name}</strong>
